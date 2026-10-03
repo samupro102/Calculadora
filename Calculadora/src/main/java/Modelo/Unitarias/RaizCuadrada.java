@@ -4,7 +4,7 @@
  */
 package Modelo.Unitarias;
 
-import Modelo.Unitarias.OperacionesUnitarias;
+
 
 /**
  *
@@ -17,28 +17,8 @@ public class RaizCuadrada extends OperacionesUnitarias{
     }
 
     @Override
-    public double getNumero1() {
-        return numero1;
-    }
-
-    @Override
-    public double getResultado() {
-        return resultado;
-    }
-
-    @Override
-    public void setNumero1(double numero1) {
-        this.numero1 = numero1;
-    }
-
-    @Override
-    public void setResultado(double resultado) {
-        this.resultado = resultado;
-    }
-    
-    @Override
     public void Calcular() {
-        Math.sqrt(numero1);
+        resultado = Math.sqrt(numero1);
     }
     
 }

@@ -23,13 +23,13 @@ public class OperacionesUnitarias extends modeloCalculadora{
         return numero1;
     }
 
-    public void setNumero1(double numero1) {
-        this.numero1 = numero1;
-    }
-
     @Override
     public double getResultado() {
         return resultado;
+    }
+
+    public void setNumero1(double numero1) {
+        this.numero1 = numero1;
     }
 
     @Override
