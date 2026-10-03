@@ -9,8 +9,7 @@ package Modelo;
  * @author Titoelgato
  */
 public class modeloCalculadora {
-    
-    private double resultado;
+        double resultado;
 
     public modeloCalculadora(double resultado) {
         this.resultado = resultado;
