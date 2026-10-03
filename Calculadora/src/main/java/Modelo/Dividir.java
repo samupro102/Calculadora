@@ -13,7 +13,8 @@ public class Dividir extends OperacionesBinarias {
     public Dividir(double numero1, double numero2, double resultado) {
         super(numero1, numero2, resultado);
     }
-
+    
+    @Override
     public double getNumero1() {
         return numero1;
     }
@@ -33,8 +34,10 @@ public class Dividir extends OperacionesBinarias {
         this.numero2 = numero2;
     }
     
-    public void calcular(){
-        resultado= numero1 / numero1; 
+    @Override
+    public void Calcular() {
+      
+        resultado = numero1 / numero2;
     }
     
     
