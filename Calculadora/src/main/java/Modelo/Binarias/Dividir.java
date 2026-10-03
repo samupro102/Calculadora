@@ -17,9 +17,10 @@ public class Dividir extends OperacionesBinarias {
     
     @Override
     public void Calcular() {
-      
-        resultado = numero1 / numero2;
+    if (numero2 == 0) {
+        throw new ArithmeticException("No se puede dividir entre cero");
     }
-    
+    resultado = numero1 / numero2;
+}
     
 }

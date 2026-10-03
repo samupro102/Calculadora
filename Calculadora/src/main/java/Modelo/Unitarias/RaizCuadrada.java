@@ -17,8 +17,11 @@ public class RaizCuadrada extends OperacionesUnitarias{
     }
 
     @Override
-    public void Calcular() {
-        resultado = Math.sqrt(numero1);
+   public void Calcular() {
+    if (numero1 < 0) {
+        throw new ArithmeticException("No existe la raíz cuadrada de un número negativo");
     }
+    resultado = Math.sqrt(numero1);
+}
     
 }

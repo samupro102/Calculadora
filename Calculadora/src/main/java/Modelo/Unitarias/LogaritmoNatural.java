@@ -14,9 +14,11 @@ public class LogaritmoNatural extends OperacionesUnitarias {
         super(numero1, resultado);
     }
 
-    
     @Override
-    public void Calcular(){
-       resultado = Math.log(numero1);
+    public void Calcular() {
+        if (numero1 <= 0) {
+            throw new ArithmeticException("El logaritmo natural solo existe para números mayores que cero");
+        }
+        resultado = Math.log(numero1);
     }
 }

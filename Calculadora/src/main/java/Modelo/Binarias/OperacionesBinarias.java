@@ -28,10 +28,4 @@ public abstract class OperacionesBinarias extends modeloCalculadora {
     public double getNumero2() {
         return numero2;
     }
-    
-    
-    @Override
-    public void Calcular() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
 }
