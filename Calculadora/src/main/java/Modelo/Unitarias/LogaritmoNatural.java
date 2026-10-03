@@ -2,16 +2,16 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Modelo;
+package Modelo.Unitarias;
 
 /**
  *
  * @author Titoelgato
  */
-public class Resta extends OperacionesBinarias {
+public class LogaritmoNatural extends OperacionesUnitarias {
 
-    public Resta(double numero1, double numero2, double resultado) {
-        super(numero1, numero2, resultado);
+    public LogaritmoNatural(double numero1, double resultado) {
+        super(numero1, resultado);
     }
 
     @Override
@@ -20,8 +20,8 @@ public class Resta extends OperacionesBinarias {
     }
 
     @Override
-    public double getNumero2() {
-        return numero2;
+    public double getResultado() {
+        return resultado;
     }
 
     @Override
@@ -30,15 +30,12 @@ public class Resta extends OperacionesBinarias {
     }
 
     @Override
-    public void setNumero2(double numero2) {
-        this.numero2 = numero2;
+    public void setResultado(double resultado) {
+        this.resultado = resultado;
     }
     
     @Override
-    public void Calcular() {
-      
-        resultado = numero1 - numero2;
+    public void Calcular(){
+       resultado = Math.log(numero1);
     }
-    
-    
 }

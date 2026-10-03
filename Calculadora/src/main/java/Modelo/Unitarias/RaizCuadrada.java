@@ -2,16 +2,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Modelo;
+package Modelo.Unitarias;
+
+import Modelo.Unitarias.OperacionesUnitarias;
 
 /**
  *
  * @author Titoelgato
  */
-public class Multiplicar extends OperacionesBinarias {
+public class RaizCuadrada extends OperacionesUnitarias{
 
-    public Multiplicar(double numero1, double numero2, double resultado) {
-        super(numero1, numero2, resultado);
+    public RaizCuadrada(double numero1, double resultado) {
+        super(numero1, resultado);
     }
 
     @Override
@@ -20,8 +22,8 @@ public class Multiplicar extends OperacionesBinarias {
     }
 
     @Override
-    public double getNumero2() {
-        return numero2;
+    public double getResultado() {
+        return resultado;
     }
 
     @Override
@@ -30,17 +32,13 @@ public class Multiplicar extends OperacionesBinarias {
     }
 
     @Override
-    public void setNumero2(double numero2) {
-        this.numero2 = numero2;
+    public void setResultado(double resultado) {
+        this.resultado = resultado;
     }
     
     @Override
     public void Calcular() {
-      
-        resultado = numero1 * numero2;
+        Math.sqrt(numero1);
     }
-    
-    
-    
     
 }

@@ -10,7 +10,7 @@ package Modelo;
  */
 public abstract class modeloCalculadora {
     
-       double resultado;
+       public double resultado;
 
     public modeloCalculadora(double resultado) {
         this.resultado = resultado;
