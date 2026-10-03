@@ -8,8 +8,9 @@ package Modelo;
  *
  * @author Titoelgato
  */
-public class modeloCalculadora {
-        double resultado;
+public abstract class modeloCalculadora {
+    
+       double resultado;
 
     public modeloCalculadora(double resultado) {
         this.resultado = resultado;
@@ -23,6 +24,5 @@ public class modeloCalculadora {
         this.resultado = resultado;
     }
     
-    
-    
-}
+    public abstract void Calcular();
+    }
