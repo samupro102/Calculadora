@@ -34,9 +34,11 @@ public class Multiplicar extends OperacionesBinarias {
         this.numero2 = numero2;
     }
     
-    public void calcular(){
-        resultado= numero1 * numero1; 
-    } 
+    @Override
+    public void Calcular() {
+      
+        resultado = numero1 * numero2;
+    }
     
     
     
